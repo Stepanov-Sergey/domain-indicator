@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="install">
+	<name>Domain trust</name>
+	<author>Sergey</author>
+	<creationDate>18.03.2013</creationDate>
+	<copyright>Copyright (C) 2013 All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>tobeornottobe2006@yandex.ru</authorEmail>
+	<authorUrl>stepanov.nichost.ru</authorUrl>
+	<version>0.0.0</version>
+	<description>MOD_MYWOT_DESC</description>
+
+
+    <languages>
+        <language tag="en-GB">language/en-GB.mod_mywot.ini</language>
+        <language tag="en-GB">language/en-GB.mod_mywot.sys.ini</language>
+        <language tag="ru-RU">language/ru-RU.mod_mywot.ini</language>
+        <language tag="ru-RU">language/ru-RU.mod_mywot.sys.ini</language>
+    </languages>
+
+	<files>
+<filename module="mod_mywot">mod_mywot.php</filename>
+<filename>mod_mywot.xml</filename>
+<folder>img</folder>
+<folder>language</folder>
+</files>
+  <config>
+    <fields name="params" >
+      <fieldset name="SETTINGS">
+	  <field name="webvisor" type="radio" default="1" label="PLG_SYS_YM_WEBVISOR" description="PLG_SYS_YM_WEBVISOR_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field name="keywot" type="text" default="XXXXXXXXXX" label="MOD_KEY_WOT" description="MOD_KEY_WOT_DESC"></field>
+		</fieldset>
+    </fields>
+  </config>
+
+</extension>
